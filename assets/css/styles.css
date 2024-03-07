@@ -1,0 +1,80 @@
+:root{
+    --primary-color: #837e7f;
+    --secondary-color: #6A615A;
+    --tertiary-color: #1C1B20;
+    --quaternary-color: #5F5249;
+    --quinary-color: #ACB5B4;
+    --light-color: white;
+    --black-color: black;
+
+    --margin-large: 16px;
+    --margin-medium: 8px;
+    --margin-small: 4px;
+}
+
+*{
+    outline: 1px solid red;
+    margin: 0;
+}
+
+header{
+    margin: 0;
+    padding: 4px;
+    width: 100%;
+    height: 80px;
+    background: var(--secondary-color);
+    background: radial-gradient(circle, var(--secondary-color) 31%, var(--tertiary-color) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .item{
+    outline: 1px solid var(--light-color);
+    padding: 8px;
+    border-radius: 8px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .item:hover{
+    background: var(--quaternary-color);
+    transition: all 0.5s;
+}
+
+header .item a{
+    text-decoration: none;
+    color: var(--light-color);
+    font-size: 1.2rem;
+}
+
+section{
+    height: 80vh;
+    padding: 32px;
+}
+
+section h1{font-size: 1rem;}
+
+section p {font-size: 1.2rem;}
+
+section .image-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .image-list img{
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.brasil{background: var(--quinary-color);}
+.india{background: var(--quinary-color);}
+.china{background: var(--quinary-color);}
+.italia{background: var(--quinary-color);}
+.peru{background: var(--quinary-color);}
+.jordania{background: var(--quinary-color);}
+.mexico{background: var(--quinary-color);}
